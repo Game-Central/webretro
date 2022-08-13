@@ -37,8 +37,7 @@
     </script>
 		<script>
       var game = (new window.URL(window.location.href)).searchParams.get('rom');
-      var system = (new window.URL(window.location.href)).searchParams.get('system');
-			var frame = webretroEmbed(document.getElementById("webretro-container"), "../", {system: system, rom: game});
+			var frame = webretroEmbed(document.getElementById("webretro-container"), "../", {system: "autodetect", rom: game});
 		</script>
 	</body>
 </html>
