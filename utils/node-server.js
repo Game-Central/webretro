@@ -9,7 +9,7 @@ app.use(express.static("..", {
 	setHeaders: (res) => {
 		res.set({
 			"Cross-Origin-Embedder-Policy": "require-corp",
-			"Cross-Origin-Opener-Policy": "same-origin",
+			"Cross-Origin-Opener-Policy": "unsafe-none",
 			"Access-Control-Allow-Origin": "*"
 		});
 	}
